@@ -17,6 +17,6 @@ app.get('/skillset',  (req, res) => {
 app.get('/workexp',  (req, res) => {
     res.render('workexp', { layout: false });
 });
-app.listen(2020, () => {
+app.listen(process.env.PORT || , function 2020 () => {
     console.log('Server is starting at port ', 2020);
 });
