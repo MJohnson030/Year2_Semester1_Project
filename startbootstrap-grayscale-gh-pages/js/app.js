@@ -20,6 +20,7 @@ app.get('/head',  (req, res) => {
     res.render('head', { layout: false });
 });
 
-app.listen(2020, () => {
-    console.log('Server is starting at port ', 2020);
+var PORT = 2020;
+app.listen(process.env.PORT||PORT () => {
+    console.log(`Server started on ${PORT}`);
 });
